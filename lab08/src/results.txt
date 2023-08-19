@@ -1,0 +1,45 @@
+Bucket Speed Test:
+What would you like L to be?: ciscoscos
+Please enter a positive integer: 23
+
+Enter # strings to insert into each map: 12
+MyHashMap with ArrayList buckets: 0.02 sec
+MyHashMap with LinkedList buckets: 0.00 sec
+MyHashMap with HashSet buckets: 0.00 sec
+MyHashMap with Stack buckets: 0.00 sec
+MyHashMap with ArrayDeque buckets: 0.00 sec
+
+Would you like to try more timed-tests? (y/n)y
+
+Enter # strings to insert into each map: 123456
+MyHashMap with ArrayList buckets: 0.52 sec
+MyHashMap with LinkedList buckets: 0.39 sec
+MyHashMap with HashSet buckets: 0.40 sec
+MyHashMap with Stack buckets: 0.29 sec
+MyHashMap with ArrayDeque buckets: 0.32 sec
+
+Insert Order Speed:
+Enter # strings to insert into ULLMap: 12345
+ULLMap: 1.13 sec
+
+Enter # strings to insert into MyHashMap: 12345
+MyHashMap: 0.03 sec
+
+Enter # strings to insert into Java's HashMap: 12345
+Java's Built-in HashMap: 0.03 sec
+
+Insert Random Speed Test:
+What would you like L to be?: eqwoeipq
+Please enter a positive integer: 12345
+
+Enter # strings to insert into ULLMap: 12345
+ULLMap: 6.26 sec
+
+Enter # strings to insert into your MyHashMap: 12345
+MyHashMap: 3.38 sec
+
+Enter # strings to insert into Java's HashMap: 12345
+Java's Built-in HashMap: 3.28 sec
+
+Answer:
+HashMaps sre best in all three cases. HashMaps generally have constant time, compare to the log n time of TreeMap/BSTMap. Hashmaps do take more memory than the other two data structures. However out of all the time tests they perform the best.

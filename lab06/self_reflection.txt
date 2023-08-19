@@ -1,0 +1,62 @@
+You must answer at least 4 questions, but the remaining ones are optional. The main goal of this file is to get you thinking critically about your own work, but we will also use these self reflections at the end of the semester when we do our internal review of the course.
+
+ArrayDeque:
+
+Q: Give an example of at least one idea from the staff solution that would have made your solution better (if any).
+
+A: The parts of the implementation that was shown to me was very similar to my own, so there wasn't anything that would have made it better.
+Q: What's something you felt proud of in your code, if anything?
+
+A: My resize method was almost the exact same as the staff solution, so I am quite proud of it.
+Q: What's something that was particularly inelegant in your code, if anything?
+
+A:
+
+Q: What did you learn by talking to your partner about writing ArrayDeque?
+
+A:
+
+Q: What do you wish you would have known before writing ArrayDeque, if anything?
+
+A: I wish that I had known to try continually adding and removing items when making my doctests because my removeFirst and removeLast methods
+Q: If you wrote ArrayDeque again, what would you do differently, if anything?
+
+A: If I could write my ArrayDeque again, I would add more helper methods so that there is less repeated code.
+
+-----
+
+LinkedListDeque:
+
+Q: Give an example of at least one idea from the staff solution that would have made your solution better (if any).
+
+A: The use of helper methods like getRecursive would have made my solution more elegant and is easier to understand than my current get method. Also, I used get in my removeLast/removeFirst methods which makes them not run in constant time.
+
+Q: What's something you felt proud of in your code, if anything?
+
+A: I felt proud of my addFirst and addLast methods because they took a long time to figure out, but it felt good once I finally got it. Also my implementation of my Node class was very similar to the staff solution.
+
+
+Q: What's something that was particularly inelegant in your code, if anything?
+
+A: My get method was particularly inelegant because I used a while loop and an unecessary temp variable.
+
+Q: What did you learn by talking to your partner about writing LinkedListDeque?
+
+A:
+
+Q: What do you wish you would have known before writing LinkedListDeque, if anything?
+
+A:
+
+Q: If you wrote LinkedListDeque again, what would you do differently, if anything?
+
+A: I wish that I had known that I could and should have started over because I spent so much time debugging when it would have been faster to just restart.
+
+
+-----
+
+Meta:
+
+Q: Did you like this design review process? Anything we should do differently next time?
+
+A: I liked the design review process, but I would have liked if I could have done this asynchronously, so I could compare it to my solution more thoroughly.

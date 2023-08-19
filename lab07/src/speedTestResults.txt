@@ -1,0 +1,42 @@
+For the insertRandomSpeedTest I inserted 10000 and 100000 strings of length 100. These were my results:
+
+Enter # strings to insert into the maps: 10000
+class ULLMap: 0.87 sec
+class BSTMap: 0.15 sec
+Java's Built-in TreeMap: 0.14 sec
+Java's Built-in HashMap: 0.15 sec
+Would you like to try more timed-tests? (y/n)y
+
+Enter # strings to insert into the maps: 100000
+--Stack Overflow -- couldn't add 100000 strings of length 1000.
+class BSTMap: 1.69 sec
+Java's Built-in TreeMap: 1.59 sec
+Java's Built-in HashMap: 1.54 sec
+
+What I found interesting is that the ULLMap has a limit of items that it can insert before the computer terminates the operations. Also, my implementatino was not far behind the industrial strength TreeMap
+and HashMap which was very cool!
+
+For the insertInOrderSpeedTest, I inserted 1000, 10000, and 100000 strings into each data structure.
+
+Enter # strings to insert into the maps: 1000
+class ULLMap: 0.02 sec
+class BSTMap: 0.01 sec
+Java's Built-in TreeMap: 0.00 sec
+Java's Built-in HashMap: 0.00 sec
+Would you like to try more timed-tests? (y/n): y
+
+Enter # strings to insert into the maps: 10000
+class ULLMap: 0.52 sec
+class BSTMap: 0.56 sec
+Java's Built-in TreeMap: 0.01 sec
+Java's Built-in HashMap: 0.01 sec
+Would you like to try more timed-tests? (y/n): y
+
+Enter # strings to insert into the maps: 100000
+--Stack Overflow -- couldn't add 100000 strings.
+--Stack Overflow -- couldn't add 100000 strings.
+Java's Built-in TreeMap: 0.09 sec
+Java's Built-in HashMap: 0.03 sec
+
+What I found interesting, was that my data structure experienced the same drop in speed as the ULList. This is likely because when inserting in order, the tree becomes spindly, so it takes O(N) time
+if you don't use other methods to curb the time like the built-in data structures likely do to keep the tree bushy and the runtime O(logN)
